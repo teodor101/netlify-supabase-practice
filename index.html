@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netlify and Supabase Practice</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
-    <h1>Welcome to Netlify and Supabase Practice</h1>
-    <button id="fetchData">Fetch Data</button>
-    <div id="dataContainer"></div>
+    <h1>Netlify and Supabase Practice</h1>
+
+    <div id="auth-container">
+        <h2>Login / Sign Up</h2>
+        <input type="email" id="email" placeholder="Enter your email">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button id="signUp">Sign Up</button>
+        <button id="logIn">Log In</button>
+        <button id="logOut" style="display:none;">Log Out</button>
+    </div>
+
+    <div id="data-container" style="display:none;">
+        <button id="fetchData">Fetch Data</button>
+        <div id="data"></div>
+    </div>
+
     <script src="script.js"></script>
 </body>
-</html>
