@@ -1,6 +1,6 @@
 const supabaseUrl = 'https://ksydiftcnlhhqsaibyod.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzeWRpZnRjbmxoaHFzYWlieW9kIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzgzMTEzMDQsImV4cCI6MjA1Mzg4NzMwNH0.uSzI66T7Y90FtPjVj_6dtSLM4Q3ilgXh2vR0_seeBuM';
-const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
 
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
